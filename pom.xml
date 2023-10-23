@@ -54,7 +54,7 @@
         <liquibase.version>4.24.0</liquibase.version>
         <liquibase-hibernate5.version>4.24.0</liquibase-hibernate5.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
-        <jaxb-runtime.version>4.0.3</jaxb-runtime.version>
+        <jaxb-runtime.version>4.0.4</jaxb-runtime.version>
         <archunit-junit5.version>0.22.0</archunit-junit5.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
         <jackson-databind-nullable.version>0.2.6</jackson-databind-nullable.version>
@@ -74,9 +74,9 @@
         <maven-checkstyle-plugin.version>3.3.0</maven-checkstyle-plugin.version>
         <checkstyle.version>10.12.4</checkstyle.version>
         <nohttp-checkstyle.version>0.0.11</nohttp-checkstyle.version>
-        <git-commit-id-plugin.version>6.0.0</git-commit-id-plugin.version>
+        <git-commit-id-plugin.version>7.0.0</git-commit-id-plugin.version>
         <modernizer-maven-plugin.version>2.6.0</modernizer-maven-plugin.version>
-        <jacoco-maven-plugin.version>0.8.10</jacoco-maven-plugin.version>
+        <jacoco-maven-plugin.version>0.8.11</jacoco-maven-plugin.version>
         <jib-maven-plugin.version>3.3.2</jib-maven-plugin.version>
         <jib-maven-plugin.image>eclipse-temurin:11-jre-focal</jib-maven-plugin.image>
         <jib-maven-plugin.architecture>amd64</jib-maven-plugin.architecture>
