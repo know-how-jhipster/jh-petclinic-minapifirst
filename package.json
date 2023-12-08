@@ -1,5 +1,5 @@
 {
-  "name": "jh-minapifirst-petclinic",
+  "name": "@know-how-jhipster/jh-minapifirst-petclinic",
   "version": "23.0.0",
   "private": true,
   "description": "Description for petclinic",
