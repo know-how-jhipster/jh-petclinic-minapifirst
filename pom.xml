@@ -5,7 +5,7 @@
                              https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.ujar.jh.petclinic.minapifirst</groupId>
+    <groupId>dev.knowhowto.jh.petclinic.minapifirst</groupId>
     <artifactId>petclinic</artifactId>
     <version>23.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -31,7 +31,7 @@
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <start-class>org.ujar.jh.petclinic.minapifirst.PetclinicApp</start-class>
+        <start-class>dev.knowhowto.jh.petclinic.minapifirst.PetclinicApp</start-class>
         <argLine>-Djava.security.egd=file:/dev/./urandom -Xmx1G</argLine>
         <m2e.apt.activation>jdt_apt</m2e.apt.activation>
         <run.addResources>false</run.addResources>
@@ -51,8 +51,8 @@
         <hibernate.version>5.6.15.Final</hibernate.version>
         <!-- The liquibase version should match the one managed by
         https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies/${spring-boot.version} -->
-        <liquibase.version>4.24.0</liquibase.version>
-        <liquibase-hibernate5.version>4.24.0</liquibase-hibernate5.version>
+        <liquibase.version>4.25.0</liquibase.version>
+        <liquibase-hibernate5.version>4.25.0</liquibase-hibernate5.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
         <jaxb-runtime.version>4.0.4</jaxb-runtime.version>
         <archunit-junit5.version>0.22.0</archunit-junit5.version>
@@ -62,7 +62,7 @@
         <maven-clean-plugin.version>3.3.2</maven-clean-plugin.version>
         <maven-site-plugin.version>3.12.1</maven-site-plugin.version>
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
-        <maven-javadoc-plugin.version>3.6.0</maven-javadoc-plugin.version>
+        <maven-javadoc-plugin.version>3.6.3</maven-javadoc-plugin.version>
         <maven-eclipse-plugin.version>2.10</maven-eclipse-plugin.version>
         <maven-enforcer-plugin.version>3.4.1</maven-enforcer-plugin.version>
         <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
@@ -72,7 +72,7 @@
         <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
         <maven-deploy-plugin.version>3.1.1</maven-deploy-plugin.version>
         <maven-checkstyle-plugin.version>3.3.1</maven-checkstyle-plugin.version>
-        <checkstyle.version>10.12.4</checkstyle.version>
+        <checkstyle.version>10.12.5</checkstyle.version>
         <nohttp-checkstyle.version>0.0.11</nohttp-checkstyle.version>
         <git-commit-id-plugin.version>7.0.0</git-commit-id-plugin.version>
         <modernizer-maven-plugin.version>2.6.0</modernizer-maven-plugin.version>
@@ -81,7 +81,7 @@
         <jib-maven-plugin.image>eclipse-temurin:11-jre-focal</jib-maven-plugin.image>
         <jib-maven-plugin.architecture>amd64</jib-maven-plugin.architecture>
         <lifecycle-mapping.version>1.0.0</lifecycle-mapping.version>
-        <openapi-generator-maven-plugin.version>6.0.1</openapi-generator-maven-plugin.version>
+        <openapi-generator-maven-plugin.version>6.0.0</openapi-generator-maven-plugin.version>
         <properties-maven-plugin.version>1.2.1</properties-maven-plugin.version>
         <sonar-maven-plugin.version>3.10.0.2594</sonar-maven-plugin.version>
 
@@ -797,8 +797,8 @@
                             <configuration>
                                 <inputSpec>${project.basedir}/src/main/resources/swagger/api.yml</inputSpec>
                                 <generatorName>spring</generatorName>
-                                <apiPackage>org.ujar.jh.petclinic.minapifirst.web.api</apiPackage>
-                                <modelPackage>org.ujar.jh.petclinic.minapifirst.service.api.dto</modelPackage>
+                                <apiPackage>dev.knowhowto.jh.petclinic.minapifirst.web.api</apiPackage>
+                                <modelPackage>dev.knowhowto.jh.petclinic.minapifirst.service.api.dto</modelPackage>
                                 <supportingFilesToGenerate>ApiUtil.java</supportingFilesToGenerate>
                                 <importMappings>Problem=org.zalando.problem.Problem</importMappings>
                                 <skipValidateSpec>false</skipValidateSpec>
@@ -882,7 +882,7 @@
                         <artifactId>maven-compiler-plugin</artifactId>
                         <configuration>
                             <testExcludes>
-                                <testExclude>org/ujar/jh/petclinic/minapifirst/config/MysqlTestContainer.java</testExclude>
+                                <testExclude>dev/knowhowto/jh/petclinic/minapifirst/config/MysqlTestContainer.java</testExclude>
                             </testExcludes>
                         </configuration>
                     </plugin>
@@ -903,7 +903,7 @@
                                 <defaultSchemaName></defaultSchemaName>
                                 <username>petclinic</username>
                                 <password></password>
-                                <referenceUrl>hibernate:spring:org.ujar.jh.petclinic.minapifirst.domain?dialect=&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
+                                <referenceUrl>hibernate:spring:dev.knowhowto.jh.petclinic.minapifirst.domain?dialect=&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                                 <verbose>true</verbose>
                                 <logging>debug</logging>
                                 <contexts>!test</contexts>
@@ -967,7 +967,7 @@
                                 <defaultSchemaName>petclinic</defaultSchemaName>
                                 <username>root</username>
                                 <password></password>
-                                <referenceUrl>hibernate:spring:org.ujar.jh.petclinic.minapifirst.domain?dialect=org.hibernate.dialect.MySQL8Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
+                                <referenceUrl>hibernate:spring:dev.knowhowto.jh.petclinic.minapifirst.domain?dialect=org.hibernate.dialect.MySQL8Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                                 <verbose>true</verbose>
                                 <logging>debug</logging>
                                 <contexts>!test</contexts>

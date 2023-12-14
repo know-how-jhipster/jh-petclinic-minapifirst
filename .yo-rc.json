@@ -30,7 +30,7 @@
     "microfrontends": [],
     "nativeLanguage": "en",
     "otherModules": [],
-    "packageName": "org.ujar.jh.petclinic.minapifirst",
+    "packageName": "dev.knowhowto.jh.petclinic.minapifirst",
     "pages": [],
     "prodDatabaseType": "mysql",
     "reactive": false,
